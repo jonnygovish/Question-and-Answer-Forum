@@ -1,4 +1,21 @@
 import Ember from 'ember';
 
+var questions = [{
+  author: "Gosh Puppah",
+  title: "How to customize your chances of recieving useful answers in  forums",
+  content: "I have put together what I've learned as a part of SoloLearn community and my post is now featured in my Blog (Yeah!!!)"
+},{
+  author: "Game Baru", 
+  title: "A good website to post question for programming",
+  content: "Any ideas"
+}, {
+  author: "Yashiv Dussoye",
+  title:  "How to make a forum in HTML",
+  content: "I want to make a webpage (later an app) where the turf community of my country can share their opinions and tips about  races and challenge each other in tipster's challenges. I also want to include a local ranking for the best tipsters.Where should i start and what should i learn to be able to that? Which website will help me?  Excuse my english 😅"
+}]
+
 export default Ember.Route.extend({
+  model(){
+    return questions;
+  }
 });
