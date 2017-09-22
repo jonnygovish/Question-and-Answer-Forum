@@ -1,5 +1,9 @@
 <p>This is a dedicated forum to help users get answers to any question they may have about any programming language.</p>
 <p>Discuss, learn and get extra resources to help you in your programming journey</p>
 
-<p>lorem ipsum
-</p>
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.title}} </li>
+    <h6> by {{question.author}}</h6>
+  {{/each}}
+</ul>
