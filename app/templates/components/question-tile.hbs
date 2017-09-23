@@ -1,5 +1,6 @@
 {{!-- Display questions in the question-tile component --}}
- <li>{{question.title}}</li>
+ <li>
+     {{#link-to 'question' question.id}}{{question.title}}{{/link-to}} </li>
     <p> by {{question.author}}</p>
-
-{{edit-question question=question edit="edit"}}
+{{!-- 
+{{edit-question question=question edit="edit"}} --}}
