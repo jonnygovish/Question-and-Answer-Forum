@@ -1,2 +1,78 @@
 
 @import "ember-cli-bootstrap-4/bootstrap";
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #EFF3F0;
+  color: #272727;
+}
+
+.title, h1, h2 {
+  font-family: 'Bree Serif', serif;
+}
+
+h3 {
+  color: #960200;
+  font-family: 'Bree Serif', serif;
+}
+a{ 
+  color: black;
+}
+// /*navbar styles*/
+.display-question{
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  margin-top: 10px;
+  // margin-bottom: -80px;
+  margin-left: -55px;
+  padding: 13px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+
+}
+#display-querry{
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  padding: 10px;
+  margin-top: 80px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+
+}
+#display-answer{
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  padding: 10px;
+  margin-top: 0px;
+  margin-left: -45px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+}
+
+.navbar-default .navbar-brand {
+    color: #AD343E;
+}
+
+
+
+.new-question{
+  background-color: #AD343E;
+}
+
+/*header*/
+
+.jumbotron {
+  background-image: url("http://www.theradfordfamily.co.uk/wp-content/uploads/2014/02/q-and-a.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 50px;
+  height: 500px;
+}
+
+/*content display*/
+
+
+
