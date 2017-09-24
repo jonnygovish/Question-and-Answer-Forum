@@ -1,11 +1,24 @@
-<p>This is a dedicated forum to help users get answers to any question they may have about any programming language.</p>
-<p>Discuss, learn and get extra resources to help you in your programming journey</p>
-<h3>Questions</h3>
+<div class="container">
+<div class="jumbotron">
+{{!-- <p>This is a dedicated forum to help users get answers to any question they may have about any programming language.</p>
+<p>Discuss, learn and get extra resources to help you in your programming journey</p> --}}
+</div>
+<h3>Questions:</h3>
+{{new-question saveQuestion="saveQuestion"}}
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
   {{!-- move each loop on index into question-tile component --}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
+</div>
 
-{{new-question saveQuestion="saveQuestion"}}
+{{!-- <h2>Answers</h2>
+
+<ul>
+  {{#each model.answers as |answer|}}
+  <li>{{answer.answer}} </li>
+  <p>{{answer.author}} </p>
+  {{/each}}
+</ul>
+<hr> --}}

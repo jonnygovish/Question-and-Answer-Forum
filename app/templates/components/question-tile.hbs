@@ -1,6 +1,9 @@
+<div class="container">
+<div class="well display-question">
 {{!-- Display questions in the question-tile component --}}
- <li>
-     {{#link-to 'question' question.id}}{{question.title}}{{/link-to}} </li>
-    <p> by {{question.author}}</p>
+<p>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</p> 
+<small>by {{question.author}} </small> 
 {{!-- 
 {{edit-question question=question edit="edit"}} --}}
+</div>
+</div>

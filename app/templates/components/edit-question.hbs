@@ -1,19 +1,21 @@
+
 {{#if editQuestionForm }}
 <form>
   <div class="form-group">
-    <label for="author">Author</label>
-    {{input value=author id='author' placeholder=question.author}}
+    <label for="author">Author:</label>
+    {{input value=author id='author' placeholder=question.author class="form-control"}}
   </div>
   <div class="form-group">
-    <label for="title">Title</label>
-    {{input value=title id="title" placeholder=question.title}}
+    <label for="title">Title:</label>
+    {{input value=title id="title" placeholder=question.title class="form-control"}}
   </div>
   <div class="form-group">
-    <label for="content">Content</label>
-    {{textarea value=content id="content" placeholder=question.content}}
+    <label for="content">Content:</label>
+    {{textarea value=content id="content" placeholder=question.content class="form-control"}}
   </div>
-  <button{{action 'edit' question}} >Save</button>
+  <button{{action 'edit' question}} class="btn btn-success">Save</button>
+  <button{{action 'cancel' question}} class="btn btn-danger">Cancel</button>
 </form>
 {{else}}
-<button{{action 'editQuestionForm'}} >Edit Question</button>
+<button{{action 'editQuestionForm'}} class="btn btn-info">Edit Question</button>
 {{/if}}
