@@ -3,6 +3,10 @@
 body {
   font-family: 'Lato', sans-serif;
   background-color: #EFF3F0;
+  background-image: url('http://www.theradfordfamily.co.uk/wp-content/uploads/2014/02/q-and-a.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vh;
   color: #272727;
 }
 
@@ -57,14 +61,14 @@ a{
 
 
 
-.new-question{
-  background-color: #AD343E;
-}
+// .new-question{
+//   background-color: #AD343E;
+// }
 
 /*header*/
 
 .jumbotron {
-  background-image: url("http://www.theradfordfamily.co.uk/wp-content/uploads/2014/02/q-and-a.png");
+  // background-image: url("http://www.theradfordfamily.co.uk/wp-content/uploads/2014/02/q-and-a.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
