@@ -1,6 +1,20 @@
 <div class="well" id="display-answer">
-  <p>{{answer.answer}}</p>
-  <small>{{answer.date}}</small>
-  <br>
-  <small>{{answer.author1}}</small>
+  <div class="row">
+    <div class="col-md-2 display-votes text-center">
+        <span {{action 'upVote' answer}}><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+        <p>
+          {{answer.votes}}
+        </p>
+        <span{{action 'downVote' answer}}><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+    </div>
+  
+
+    <div class="col-md-10">
+      <p>{{answer.answer}}</p>
+      <small>{{answer.date}}</small>
+      <br>
+      <small>{{answer.author1}}</small>
+    </div>
+
+  </div>
 </div>
