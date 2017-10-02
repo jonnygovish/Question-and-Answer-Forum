@@ -1,0 +1,11 @@
+<div class="well" id="fav-questions">
+<div class="row">
+  <ul class="list-unstyled">
+    {{#each favQuestions.favoriteQuestions as |favoriteQuestion|}}
+      <li>{{#link-to 'question' question.id}} {{favoriteQuestion.title}} 
+          {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
+</div>

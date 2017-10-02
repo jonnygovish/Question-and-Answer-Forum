@@ -1,9 +1,14 @@
 <div class="container">
 <div class="well display-question">
+  
+{{question-popularity question}}
 {{!-- Display questions in the question-tile component --}}
 <p>{{#link-to 'question' question.id}}{{question.title}}{{/link-to}}</p> 
-<small>by {{question.author}} </small> 
-{{!-- 
-{{edit-question question=question edit="edit"}} --}}
+<small class="text-right">by {{ question.author}} </small>
+{{#if noFav}}
+  <span{{action 'favQuestion' question}}><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+{{else}}
+  <span{{action 'removeFavQuestion' question}}><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+  {{/if}}
 </div>
 </div>

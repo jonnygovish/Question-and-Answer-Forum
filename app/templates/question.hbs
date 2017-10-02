@@ -1,10 +1,9 @@
 <div class="container">
-<div class="well" id="display-querry">  
+  
 {{!-- <h2>{{model.title}} by {{model.author}}</h2> --}}
 
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{edit-question question=model edit="edit"}}
-</div>
 
 <h2>Answers</h2>
 
@@ -14,7 +13,7 @@
   {{answer-tile answer=answer upVote="upVote" downVote="downVote"}} 
   {{/each}}
 </ul>
-
+ 
 {{new-answer saveAnswer="saveAnswer" question=model }}
 </div>
 

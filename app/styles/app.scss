@@ -2,15 +2,16 @@
 @import "ember-cli-bootstrap-4/bootstrap";
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #EFF3F0;
+  background-color: black;
   background-image: url('http://www.theradfordfamily.co.uk/wp-content/uploads/2014/02/q-and-a.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100vh;
+  background-size: contain;
+  background-position: center;
   color: #272727;
 }
 
-.title, h1, h2 {
+.title, h1, h2 , h4{
   font-family: 'Bree Serif', serif;
 }
 
@@ -22,8 +23,22 @@ a{
   color: black;
 }
 // /*navbar styles*/
+#fav-questions{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border: 1px solid #f3f3f3;
+  margin-top: 56px;
+  // margin-bottom: -80px;
+  margin-left: -15px;
+  padding: 13px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+
+}
 .display-question{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
   border: 1px solid #f3f3f3;
   margin-top: 10px;
   // margin-bottom: -80px;
@@ -35,7 +50,7 @@ a{
 
 }
 #display-querry{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #f3f3f3;
   padding: 10px;
   margin-top: 80px;
@@ -45,7 +60,7 @@ a{
 
 }
 #display-answer{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #f3f3f3;
   padding: 10px;
   margin-top: 0px;
@@ -73,10 +88,12 @@ a{
   background-position: center;
   background-size: 100%;
   margin-top: 50px;
-  height: 500px;
+  opacity: 0.5px;
 }
 
 /*content display*/
 
-
+#popularity {
+  color: red;
+}
 
